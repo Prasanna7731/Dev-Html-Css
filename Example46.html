@@ -1,0 +1,89 @@
+<!-- example on application  -->
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<title>Application</title>
+		<link rel="icon" href="logo2.png"/>
+		<style>
+			#main-div{
+				background-color:#6b6b6b;
+				width:40%;
+			    margin:auto;
+				padding-left:40px;
+				box-shadow:2px 2px 4px 3px #ff0000;
+			}
+			label{
+				font-size:18px;
+				color:#66ffff;
+			}
+			.textbox{
+				font-size:20px;
+				width:200px;
+			}
+			#head1{
+				color:#ccff33;
+				text-align:center;
+			}
+			button{
+				width:210px;
+				height:30px;
+				background:#3300cc;
+				color:white;
+				font-size:22px;
+				border:none;	
+			}
+			button:hover{
+				background:#0033ff;
+			}
+			span{
+				color:red;
+				font-size:26px;
+			}
+		</style>
+ 	</head>
+	<body>
+		<div id="main-div">
+			<h1 id="head1">Enrollment Form</h1>
+			<form id="form1" action="register.aspx" >	
+				<p>
+					<label>Fullname</label> <span>*</span autocomplete="off"><br>
+					<input type="text" id="fna" name="fna" class="textbox" autofocus required/>
+				</p>
+				<p>
+					<label>EmailId</label> <span>*</span> <br>
+					<input type="text" id="mid" name="mid" class="textbox" required/>
+				</p>
+				<p>
+					<label>Mobile Number</label> <span>*</span> <br>
+					<input type="text" id="ph" name="ph" class="textbox" required/>
+				</p>
+				<p>
+					<label>Data of Birth</label> <br>
+					<input type="date" id="dob" name="dob" min="1960-01-01" max="2025-02-07" class="textbox"/>
+				</p>
+				<p>
+					<label>Gender</label> <br>
+					<input type="radio" id="gender1" name="gender" value="male"/>
+					<label>Male</label> &nbsp;
+					<input type="radio" id="gender2" name="gender" value="female"/>
+					<label>FeMale</label> &nbsp;
+					<input type="radio" id="gender3" name="gender" value="others"/>
+					<label>Others</label>
+				</p>
+				<p>
+					<label>Qualification</label> <br>
+					<input type="text" id="qua" name="qua" class="textbox"/>
+				</p>
+				<p>
+					<label>Address</label> <br>
+					<input type="text" id="address" name="address" class="textbox"/>
+				</p>
+				<p>
+					<!-- <input type="submit" id="sb" name="sb" value="Submit"/>
+							OR -->
+					<button name="sub1">submit</button>
+				</p>
+			</form>
+		</div>
+	</body>
+</html>

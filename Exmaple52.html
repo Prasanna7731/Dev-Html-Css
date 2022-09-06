@@ -1,0 +1,24 @@
+example52
+----------------
+<!-- exmaple on output tag --> 
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+		<title>Ex52</title>
+		<link rel="icon" href="a.jpg"/>
+   </head>
+ <body>
+	 <output>hello world</output> <br>
+<!--	 <button onclick="alert('welcome')">click me</button>
+			OR	 
+	 <button onclick="document.write('welcome')">click me</button> 
+			OR	-->
+	 <button onclick="res.value='welcome'">click me</button>
+	<output id="res"> </output>
+	<br>
+
+	<input type="range"/> <br>
+	<input type="range" id="price" name="price" min="2000" max="20000" value="4000" style="width:600px;" onchange="p.value=price.value"/> 
+	<output id="p" style="color:blue;"> </output>	
+ </body>
+</html>

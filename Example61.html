@@ -1,0 +1,54 @@
+<!-- exmaple on iframe application --> 
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+		<title>Ex59</title>
+		<link rel="icon" href="a.jpg"/>
+		<style>
+			nav{
+				width:200px;
+				height:700px;
+				background:#3300cc;
+				text-align:center;
+				float:left;
+			}
+			.link{
+				font-size:25px;
+				text-decoration:none;
+				background:#3300ff;
+				color:white;
+				width:200px;
+				display:inline-block;
+			}
+			.link:hover{
+				background:#ff0033;
+			}
+			section{
+				float:left;
+			}
+			iframe{
+				width:1000px;
+				height:700px;
+				background:#ccffcc;
+			}
+		</style>
+    </head>
+ <body>
+	<nav>	<!-- menu bar creation -->
+		<div>
+			<a href="h9.html" class="link" target="myframe">Home</a>	<!-- menu items -->
+			<a href="h13.html" class="link" target="myframe">Services</a>	
+			<a href="h19.html" class="link" target="myframe">Batches</a>	
+			<a href="h28.html" class="link" target="myframe">Courses</a>	
+			<a href="h31.html" class="link" target="myframe">ContactUs</a>	
+			<a href="h46.html" class="link" target="myframe">Enroll here</a>	
+		</div>
+	</nav>
+	<section>
+		<iframe id="myframe" name="myframe" src="h9.html" frameborder></iframe>
+	</section>
+ </body>
+</html> 
+
+ 
+ 

@@ -1,0 +1,24 @@
+<!-- example on "input" tag  -->
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<title>Ex45</title>
+		<link rel="icon" href="logo2.png"/>
+ 	</head>
+	<body>
+		<h3>demo on file control</h3>
+		<input type="file" id="f1" name="f1"/> <br>
+		<input type="file" id="f2" name="f2" multiple/> <bR>
+		<input type="file" id="f3" name="f3" accept=".pdf,.doc,.docx"/>
+
+		<script>
+			const fileobj = document.getElementById("f3");
+			fileobj.onchange = function() {
+												if(this.files[0].size > 5242880 ){	//5mb
+												   alert("File is too big!, try another file");
+													this.value = "";
+												};
+											};
+		</script>
+	</body>
+</html>

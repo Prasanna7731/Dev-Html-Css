@@ -1,0 +1,57 @@
+<!-- exmaple on optgroup tag --> 
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+		<title>Ex49</title>
+		<link rel="icon" href="logo2.png"/>
+		<style>
+			.veg{
+				color:#009900;
+			}
+			.non-veg{
+				color:#ff0000;
+			}
+		</style>
+   </head>
+ <body>
+	<h2>demo on list control</h2>
+	<label>MENU</label> <br>
+	<select id="menu" name="menu" multiple size="10">
+		<optgroup label="Soups" class="veg">
+			<option>Tomato Soup  - Rs179</option>
+			<option>Tomato Coriander Soup - Rs180</option>
+			<option>Miryala Rasam  - Rs179</option>
+			<option>Pepper Rasam Soup - Rs190</option>
+			<option>Mokkajonna Shorba  - Rs189</option>
+		</optgroup>
+		<optgroup label="Veg-Starters" class="veg">
+			<option>Vulligadda Pakodi  - Rs229</option>
+			<option>Kaya Gurala Pakodi  - Rs259</option>
+			<option>Kaya Gurala Undalu  - Rs279</option>
+			<option>Veg Manchurian - - Rs250</option>
+			<option>Crispy Fried Baby Corn  - Rs279</option>
+			<option>Baby Corn Manchurian  - Rs279</option>
+		</optgroup>
+		<optgroup label="NonVeg-Starters" class="non-veg">
+			<option>Miryala Kodi  - Rs379</option>
+			<option>Pepper Chicken In Andhra Style - - Rs390</option>
+			<option>Seema Kodi (Boneless)  - Rs379</option>
+			<option>Kaju Kodi (Boneless)  - Rs399</option>
+			<option>Chilli Chicken  - Rs379</option>
+			<option>Chicken 65  - Rs379</option>
+			<option>RR Special Kodi  - Rs399</option>
+		</optgroup>
+		<optgroup label="Rice/Pulao/Biryani">
+			<option class="veg">Ragi Sangati  - Rs189</option>
+			<option class="veg">Annam  - Rs189</option>
+			<option class="veg">Steamed Rice</option>
+			<option class="veg">Perugu Annam  - Rs229</option>
+			<option class="veg">Jatka Egg Fried Rice  - Rs289</option>
+			<option class="non-veg"> Chicken Wings Pulao  - Rs410</option>
+			<option class="non-veg">Chicken Pulao - Rs300 </option>
+			<option class="non-veg">Kodi Pulao  - Rs369</option>
+		</optgroup>
+	</select>
+
+ </body>
+</html> 

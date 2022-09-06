@@ -1,0 +1,41 @@
+<!-- example on Array with images -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<style>
+		#div1{
+			width:80%;
+			height:350px;
+			margin:auto;
+		}
+		.img1{
+			width:100%;
+			height:100%;
+		}
+	</style>
+ </head>
+ <body>
+	<h2>demo displaying images</h2>
+	<div id="div1">
+		<img id="image" class="img1" src="images/baby.jpg"/>
+	</div>
+	
+	<script>
+		const imgs = ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.png", "g.jpg", "h.jpg"];
+		var index=0;
+		window.setInterval("changeImage()", 3000);		//call back
+        function changeImage()
+		{
+			if(index>7) {
+				index=0;		//re-starting
+			}
+			//displaying image in img tag
+			document.getElementById("image").src="images/"+imgs[index];
+			index++; 
+		}
+	</script>
+
+ </body>
+</html>

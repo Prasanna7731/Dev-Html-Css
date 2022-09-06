@@ -1,0 +1,80 @@
+ -->
+ <!-- example on div with flex
+	display:flex;  <== it displaying all elements sclasse-by-sclasse row wise (default setting) or column wise
+	flex-wrap:nowrap/wrap;  <== it align element to next line 
+
+	flex-direction <== it used to specifiy direction (order) of flex elements
+				flex-direction:row|row-reverse|column|cloumn-reverse;
+
+	flex-flow  <== it combination of felx-wrap & flex-direction attributes.
+				flex-flow: direction wrap;
+Note: flex should bet applied on nested tags only.
+		  sub div size based on content
+ -->
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<title>Ex25</title>
+		<link rel="icon" href="logo1.png"/>
+		<style>
+			#main-div{
+				display:flex;
+			/* flex-wrap:wrap;  
+				flex-direction:column-reverse; */
+			}
+			.div1{	
+				background-color:#ccff33;
+			}
+			.div2{
+				background-color:#ff99ff;
+			}
+			.div3{
+				background-color:#0066ff;
+			}
+			.div4{
+				background-color:#ffff33;
+			}
+		</style>
+ 	</head>
+	<body>
+		<h3>demo on float</h3>
+		<div id="main-div">	<!-- main div -->
+			<div class="div1">			<!-- sub divs -->
+				<h2>January</h2>
+			</div>
+			<div class="div2">
+				<h2>February</h2>
+			</div>
+			<div class="div3">
+				<h2>March</h2>
+			</div>
+			<div class="div4">
+				<h2>April</h2>
+			</div>
+			<div class="div1">
+				<h2>May</h2>
+			</div>
+			<div class="div2">
+				<h2>June</h2>
+			</div>
+			<div class="div3">
+				<h2>July</h2>
+			</div>
+			<div class="div4">
+				<h2>August</h2>
+			</div>
+			<div class="div1">
+				<h2>September</h2>
+			</div>
+			<div class="div2">
+				<h2>October</h2>
+			</div>
+			<div class="div3">
+				<h2>November</h2>
+			</div>
+			<div class="div4">
+				<h2>December</h2>
+			</div>
+	 </div>
+	</body>
+</html>
