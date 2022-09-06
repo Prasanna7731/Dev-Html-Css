@@ -1,0 +1,38 @@
+<!-- example on JS  
+var	=> outer (global) variable declarations
+		=> we can use in function/block or in open script
+		=> it supports hoisting
+		=> it supports re-defination/re-declaration
+		=> its old
+
+let		=> local variable declarations
+		=> we can use in function/block or in open script or in sub block
+		=> it not supports hoisting	
+		=> it not supports re-defination/re-declaration
+		=> its new feature (since JS6)			-->
+
+        <!DOCTYPE html>
+        <html lang="en">
+         <head>
+          <meta charset="UTF-8">
+          <title>JS11</title>
+         </head>
+         <body>
+            <h3>demo on var Vs let</h3>
+            <script>
+                var a=120;	//number
+                n=45;
+                document.write(a,"<bR>");
+                //let a="siva";  error
+                var a="siva";	//string
+                document.write(a,"<bR>");
+                var a=new Date();
+                document.write(a,"<bR>");
+		document.write(n,"<bR>");
+		document.write(n*10,"<bR>");		
+		//let n;	not supports
+		var n;	//hoisting
+	</script>
+ 
+ </body>
+</html>

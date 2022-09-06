@@ -1,0 +1,31 @@
+<!-- example JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">				 
+  <title>JS</title>
+ </head>
+ <body>
+	<h2>demo on loops</h3>
+	<label>Table number</label>
+	<input type="text" id="tn" autofocus/> 
+	<button onclick="printTable()">Print Table</button>
+	<br>
+	<output id="result"></output>
+	<script>
+		//printing nth table
+		function printTable()
+		{
+			let n = tn.value;
+			let res, st="";
+			for(let i=1; i<21; i++) {
+				res=n*i;
+				//document.write(n+"*"+i+"="+res+"<br>");	or
+				st=st+(n+"*"+i+"="+res+"<br>");
+			}
+			//result.value=st;   its not supports tags
+			document.getElementById("result").innerHTML=st;
+		}	 
+	</script>
+ </body>
+</html>

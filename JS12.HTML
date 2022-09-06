@@ -1,0 +1,53 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JS12</title>
+ </head>
+ <body>
+	<h3>demo on JS Operators</h3>
+	<script>
+		let x=70, y=45;
+		//arith ope
+		let sum = x+y;
+		document.write(sum,"<br>");
+		document.write(x-y,"<br>");
+		document.write(y**3,"<br>");
+
+		//relational ope
+		document.write(x>=1, "<bR>");
+		document.write(y>=x, "<bR>");
+		let z="70";
+		document.write(x==z, "<br>");
+		document.write(x===z, "<br>");
+		document.write(x!=z, "<br>");
+		document.write(x!==z, "<br>");
+
+		//logical ope
+		document.write(x>=1 && x<=100, "<bR>");
+		document.write(y===20 || y===45 || y===80, "<bR>");
+	//compound ope
+    x+=20;		//x=x+20;
+		y*=5;		//y=y*5;
+		document.write(x, "<br>");
+		document.write(y, "<br>");
+
+		//unary ope
+		document.write(x++, "<bR>");	//post incre		90		91
+		document.write(++x, "<bR>");	//pre incre		92		92
+		document.write(y--, "<bR>");		//post decre	225	224
+		document.write(--y, "<bR>");		//pre decre		223	223		
+
+		//ternary ope
+		document.write( x%2===0 ? "Even Number" : "Odd Number", "<br>" );
+
+		//concate ope
+		document.write("rama"+"rao"+"<br>");
+		document.write("x val "+x+"<br>");
+		document.write(x+true);
+	</script>
+ 
+ </body>
+</html>
+			

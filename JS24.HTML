@@ -1,0 +1,96 @@
+<!-- finding grade of a student.
+take input rollno, name, marks in N subject from user.
+Grade		Avg
+A+			80-100
+A				70-79
+B+			60-69
+B				50-59
+C				40-49
+Fail			0-39
+Note:  min marks in each is 40   -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">				 
+  <title>JS</title>
+	<script>
+		function getResult()
+		{
+			let h,c,j,tot,avg,grd;
+			//collecting data from html
+			h = +hm.value;		// +var converts into number
+			c = +cm.value;
+			j = +jm.value;
+			tot = h+c+j;
+			avg = tot/3;
+			//checking pass or fail
+			if(h>39 && c>39 && j>39) {
+				//checking grade
+				if( avg>=80)
+					grd="A+";
+				else if( avg>=70)
+					grd="A";
+				else if( avg>=60)
+					grd="B+";
+				else if( avg>=50)
+					grd="B";
+				else
+					grd="C";
+			} else {
+				grd="Fail";
+			}
+			//displaying data in output tags
+			total.value = "Total Marks :"+tot;
+			average.value = "Average :"+avg;
+			grade.value="Grade :"+grd;
+		}
+	</script>
+ </head>
+ <body>
+	<table align="center" style="background:#ccffcc;">
+		<tr>
+			<td colspan="2" align="center"> <h2>Marks Report</h2> </td>
+		</tr>
+		<tr>
+			<td> <label>RollNo</label> </td>
+			<td> <input type="text" id="rno"/> </td>
+		</tr>
+		<tr>
+			<td> <label>Name</label> </td>
+			<td> <input type="text" id="sna"/> </td>
+		</tr>		
+		<tr>
+			<td colspan="2" align="center"> <label>Marks in</label> </td>
+		</tr>
+
+		<tr>
+			<td> <label>HTML</label> </td>
+			<td> <input type="text" id="hm"/> </td>
+		</tr>		
+		<tr>
+			<td> <label>CSS</label> </td>
+			<td> <input type="text" id="cm"/> </td>
+		</tr>		
+		<tr>
+			<td> <label>JavaScript</label> </td>
+			<td> <input type="text" id="jm"/> </td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"> <button onclick="getResult()">Result</button> </td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right"> <output id="total" ></output> 
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right"> <output id="average" ></output> 
+			</td>
+		</tr>		 
+		<tr>
+			<td colspan="2" align="right"> <output id="grade" ></output> 
+			</td>
+		</tr>
+ 
+	</table>
+ </body>  
+</html>

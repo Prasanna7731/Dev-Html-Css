@@ -1,0 +1,45 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JS17</title>
+	<style>
+		div{
+			width:250px;
+			background:linear-gradient(to right, #3300ff,#ff00ff);
+			color:#ffff00;
+			padding:20px;
+			margin:auto;
+		}
+	</style>
+ </head>
+ <body>
+	<div>
+		<h3 align="center">Simple Interest Calc</h3>
+		<label>Principal Amount</label><bR>
+		<input type="text" id="pamt"/> <bR>
+		<label>Rate of Interest</label><bR>
+		<input type="text" id="roi"/> <span>(%)</span> <bR>
+		<label>Time</label><bR>
+		<input type="text" id="time"/> <span>Year(s)</span> <bR>
+		<button onclick="compute()" >Calculate</button> <br>
+		<output id="result"></output>
+	</div>
+    <script>
+		function compute()
+		{
+			let p,r,t,si;		//local var
+				//getting ==> id.value			setting/assing ==> id.value='val'
+			p = pamt.value;	//collecting data from UI
+			r = roi.value;
+			t = time.value;
+			si = p*t*r/100;
+			//alert("Simple Interest Amt :"+si);	
+			//document.write("Simple Interest Amt :"+si);
+			result.value="Simple Interest Amt :"+si;
+		}
+	</script>
+ 
+ </body>  
+</html>

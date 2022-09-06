@@ -1,0 +1,49 @@
+
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JS18</title>
+	<style>
+		div{
+			width:360px;
+			background:radial-gradient(#3300ff,#ff00ff);
+			color:#ffff00;
+			padding-left:30px;
+			margin:auto;
+		}
+		input{
+			font-size:30px;
+			width:300px;
+			text-align:right;
+			margin-bottom:10px;
+		}
+		button{
+			width:35px;
+			height:35px;
+			font-size:30px;
+		}
+		button:hover{
+			background:#6b6b6b;
+		}
+	</style>
+ </head>
+ <body>
+	<div>
+		<h1 align="center">Arithmatic Calc</h1>
+		<input type="text" id="firstNum" autofocus title="enter number"/> 
+		<bR>
+		<input type="text" id="secNum" title="enter number"/> <br>
+		<input type="text" id="result" readonly/> <br>
+		<button onclick="result.value=parseInt(firstNum.value)+parseInt(secNum.value)"> + </button>
+		<button onclick="result.value=firstNum.value-secNum.value"> - </button>
+		<button onclick="result.value=firstNum.value*secNum.value"> * </button>
+		<button onclick="result.value=firstNum.value/secNum.value"> / </button>
+		<button onclick="result.value=firstNum.value%secNum.value"> % </button>
+		<button onclick="result.value=firstNum.value**secNum.value"> ^ </button>
+	</div>
+</body>  
+</html>
+	
+	
